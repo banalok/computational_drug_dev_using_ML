@@ -46,7 +46,7 @@ if uploaded_file is not None:
     download_model_from_drive()
     load_model()
     org_fingerprint_df, final_df, prediction = prediction_fingerprints()
-    chem_name = org_fingerprint_df[org_fingerprint_df['Column2'].str.contains('CHEM')]
+    chem_name = org_fingerprint_df[org_fingerprint_df.apply(lambda row: row.astype(str).str.contains('CHEM').any(), axis=1)]
     final_df = pd.concat([chem_name, final_df], axis=1)
     prediction = pd.concat([chem_name, prediction], axis=1)
     prediction = prediction.rename(columns={prediction.columns[0]: 'Molecular ID', prediction.columns[1]: 'pIC50'})
