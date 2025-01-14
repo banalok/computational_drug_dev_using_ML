@@ -11,6 +11,7 @@ def load_data(uploaded_file):
     st.header("Original File")
     st.write(org_df)
     org_df.to_csv('fingerprints.smi', sep = '\t', header = False, index = False) # smi file needed for padel to calculate descriptors
+    return org_df
 
 # Molecular descriptor calculator using PaDEL
 def desc_calc():
