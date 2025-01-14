@@ -37,6 +37,7 @@ st.warning("""This application predicts the potency of a molecular compound base
         The pIC₅₀ value typically ranges from about 0 (less potent) to 12 (highly potent).""")
 
 st.header("Upload a text file with Canonical SMILES notation and its corresponding molecular ID")
+st.markdown("[Test Data](https://github.com/banalok/computational_drug_dev_using_ML/blob/main/test_acetylcholinesterase.txt)")
 uploaded_file = st.file_uploader("Upload", type=['txt'])
 
 if uploaded_file is not None:
