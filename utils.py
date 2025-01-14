@@ -18,8 +18,8 @@ def desc_calc():
     print("Downloading files...")
     # install_java()
     download_model_from_drive()
-    download_padel_from_drive()
-    download_xml_from_drive()
+    # download_padel_from_drive()
+    # download_xml_from_drive()
     # to automatically run this command in the terminal to execute descriptor calculation
     bashCommand = "java -Xms2G -Xmx2G -Djava.awt.headless=true -jar ./PaDEL-Descriptor/PaDEL-Descriptor.jar -removesalt -standardizenitro -fingerprints -descriptortypes ./PaDEL-Descriptor/PubchemFingerprinter.xml -dir ./ -file padel_descriptors_output.csv"
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
@@ -54,17 +54,17 @@ def download_model_from_drive():
     url = f"https://drive.google.com/uc?id={file_id}"
     gdown.download(url, quiet=False)
 
-@st.cache_data
-def download_padel_from_drive():
-    file_id = "170DoLoUhdIuKbWmYWtiYLEl1k26R_VAR"
-    url = f"https://drive.google.com/uc?id={file_id}"
-    gdown.download(url, quiet=False)
+# @st.cache_data
+# def download_padel_from_drive():
+#     file_id = "170DoLoUhdIuKbWmYWtiYLEl1k26R_VAR"
+#     url = f"https://drive.google.com/uc?id={file_id}"
+#     gdown.download(url, quiet=False)
 
-@st.cache_data
-def download_xml_from_drive():
-    file_id = "1IWu9Um3HmbspVnLaqu_ETVTtNEmb29k_"
-    url = f"https://drive.google.com/uc?id={file_id}"
-    gdown.download(url, quiet=False)
+# @st.cache_data
+# def download_xml_from_drive():
+#     file_id = "1IWu9Um3HmbspVnLaqu_ETVTtNEmb29k_"
+#     url = f"https://drive.google.com/uc?id={file_id}"
+#     gdown.download(url, quiet=False)
 
 @st.cache_resource
 def install_java():
