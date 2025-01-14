@@ -14,7 +14,7 @@ def load_data(uploaded_file):
 
 # Molecular descriptor calculator using PaDEL
 def desc_calc():
-    print("Installing Java...")
+    print("Downloading files...")
     # install_java()
     download_model_from_drive()
     download_padel_from_drive()
