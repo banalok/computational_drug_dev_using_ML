@@ -1,4 +1,5 @@
-Acetylcholinesterase (AChE) is an enzyme critical for nervous system function. It breaks down the neurotransmitter acetylcholine (ACh) into choline and acetate, terminating the signal transmission at cholinergic synapses. This process is essential for proper muscle function and nerve signaling.
+
+**Acetylcholinesterase (AChE)** is an enzyme critical for nervous system function. It breaks down the neurotransmitter acetylcholine (ACh) into choline and acetate, terminating the signal transmission at cholinergic synapses. This process is essential for proper muscle function and nerve signaling.
 
 AChE is a target in drug discovery for neurological and neurodegenerative disorders. AChE inhibitors are used to increase acetylcholine levels in the brain, improving memory and cognitive function.
 
